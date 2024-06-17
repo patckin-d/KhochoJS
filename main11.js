@@ -63,4 +63,95 @@ function showAnswerQuestions(){
 changeQuestion()
 
 let btn = document.getElementsByClassName("btn")[0];
-btn.onclick = saveAnswer;
+btn.addEventListener("click",()=>{
+    saveAnswer();
+});
+
+let anketa = document.getElementsByClassName("anketa")[0];
+anketa.addEventListener("keypress", (event)=>{
+   let key = event.keyCode;
+    if (key == 13) {
+        saveAnswer();
+        console.log(event)
+    }
+})
+
+/*
+    1. тест пользователя
+    2. отследить текст пользователя
+    3. реакция на текст пользователя
+*/
+
+let text = "спасибо"
+inputUs.addEventListener("input",(event)=> {
+   if( event.target.value == text ){
+        console.log("и тебе спасибо")
+   }
+})
+// c == спасибо
+// п == спасибо
+// а == спасибо
+// с == спасибо
+// и == спасибо
+// б == спасибо
+// о == спасибо
+
+// c == спасибо
+// cп == спасибо
+// cпа == спасибо
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let customEvent = new Event("thanks");
+
+// anketa.addEventListener("thanks", () => {
+//     console.log('th')
+// })
+
+// anketa.dispatchEvent(customEvent)
