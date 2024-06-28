@@ -1,3 +1,5 @@
+const newEvent = new Event("thanks");
+
 let question = document.getElementsByClassName("question")[0];
 
 let arrayQuestions = [
@@ -55,11 +57,6 @@ function showAnswerQuestions(){
     getList();
 }
 
-
-
-
-
-
 changeQuestion()
 
 let btn = document.getElementsByClassName("btn")[0];
@@ -85,9 +82,14 @@ anketa.addEventListener("keypress", (event)=>{
 let text = "спасибо"
 inputUs.addEventListener("input",(event)=> {
    if( event.target.value == text ){
-        console.log("и тебе спасибо")
+        document.dispatchEvent(newEvent)
    }
 })
+
+document.addEventListener("thanks", () => {
+    console.log("и тебе спасибо");
+});
+
 // c == спасибо
 // п == спасибо
 // а == спасибо
@@ -99,12 +101,6 @@ inputUs.addEventListener("input",(event)=> {
 // c == спасибо
 // cп == спасибо
 // cпа == спасибо
-
-
-
-
-
-
 
 
 
