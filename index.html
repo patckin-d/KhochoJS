@@ -7,16 +7,51 @@
     </head>
 
     <body>
-        <div class ="imgs"> 
-            <img src= "https://trikky.ru/wp-content/blogs.dir/1/files/2023/03/23/zyro-image-11.jpg">
-            <img src= "https://img.razrisyika.ru/kart/90/356661-krome-hellou-kitti-33.jpg">
-            <img src= "https://masterpiecer-images.s3.yandex.net/c352b1b9801c11ee9607720ccb3e265f:upscaled">
-            <img src= "https://cs5.pikabu.ru/post_img/big/2015/06/04/11/1433446202_1725992411.jpg">
-            <div class="popup">
-                 <img src= "https://cs5.pikabu.ru/post_img/big/2015/06/04/11/1433446202_1725992411.jpg">
-                 <button class="close">x</button>
-            </div>
+        <div class = "filter">
+            <button class= "filterButton">яблочко</button>
+            <button class= "filterButton">киса</button>
+            <button class= "filterButton">артрит</button>
+            <button class= "filterButton">X</button>
         </div>
+
+        <!-- 
+
+         при нажатии на кнопку происходит фильтр по тегу
+         1. сделать фильтр по массиву с изображениями через метод массива
+         2. при нажатии на копку выводить нужный фильтр - создать событие с кнопками для фильтра
+         3.отображать то, что подходит и скрывать то, что не подходит
+         -->
+
+         
+        <div class ="imgs"> 
+           <!-- <div class ="imgApple"> 
+            <img src= "https://trikky.ru/wp-content/blogs.dir/1/files/2023/03/23/zyro-image-11.jpg">
+            <div class="apple">яблочко</div>
+           </div> -->
+        </div>
+    
+
+        <div class = "modalwindows">  
+
+            <div class="popup">
+                
+                <div class="text">
+                    Картинка 1
+                </div>
+
+                <button class="close">x</button>
+                <div class = "arrow">
+                    <button class ="arrowLeft"><</button>
+                    <img src= "">
+                    <button class ="arrowRight">></button>
+                </div>
+            </div>
+
+            <div class = "background"></div>
+
+        </div>
+            
+
         <script src ="./main14.js"></script>
     </body>
 </html>
