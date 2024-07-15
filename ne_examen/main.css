@@ -8,13 +8,19 @@ body {
     margin:0px;
 }
 
-.gallery{
+.gallery .secondGallery{
     display:flex;
     justify-content: space-around;
     width: 100%;
     flex-wrap: wrap;
 }
 
+.secondGallery img{
+        width: 400px;
+        height: 400px;
+        object-fit: cover;
+        object-position: center;
+}
 
 .gallery img{
     width: 400px;
@@ -45,6 +51,7 @@ body {
 .arrow{
     color: azure;
     font-size: 100px;
+    cursor: pointer;
 }
 
 .arrow.right{
@@ -61,4 +68,4 @@ body {
     align-items: center;
     flex-direction: column;
 }
-
+s
